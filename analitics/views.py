@@ -4,7 +4,10 @@ from analitics.descriptive.totals import record_users, record_ratings, record_mo
 from analitics.descriptive.nuniques import unique_tag, unique_movie, unique_rating, unique_user
 from analitics.descriptive.means import mean_users, mean_movies, mean_ratings, mean_tags
 from analitics.descriptive.standard_deviation import std_user, std_tags, std_movies, std_rating
-
+from analitics.descriptive.min_max import (
+    min_movies, min_tags, min_user, min_ratings,
+    max_movies, max_tags, max_user, max_ratings
+)
 
 def home():
     return render_template("home.html")
@@ -32,4 +35,14 @@ def dashboard():
         std_movies=std_movies,
         std_rating=std_rating,
         std_tags=std_tags,
+        # ________________________________
+        min_movies=min_movies,
+        min_tags=min_tags,
+        min_user=min_user,
+        min_ratings=min_ratings,
+        # ________________________________
+        max_movies=max_movies,
+        max_tags=max_tags,
+        max_user=max_user,
+        max_ratings=max_ratings,
     )
