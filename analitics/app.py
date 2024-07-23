@@ -3,7 +3,6 @@ from flask import Flask
 from analitics.views import home, dashboard
 from analitics.core.config import settings
 
-
 app = Flask(settings.APP_NAME)
 
 app.add_url_rule("/", methods=["GET"], view_func=home)
