@@ -884,6 +884,29 @@ button:focus {
     box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-gray-300);
 }
 
+.table-quartile{
+    border: 2px solid white;
+    margin-top:50px;
+    width: 100%;
+    padding: 10px;
+}
+
+.table{
+    line-height: 40px;
+    width: 100%;
+}
+
+.head-table{
+    border-bottom: 2px solid white;
+}
+
+.table-body{
+    text-align: center;
+}
+
+.row_body{
+    border-right: 1px solid white;
+}
 /*.search-field {*/
 /*  display: flex;*/
 /*  flex-grow: 1;*/
