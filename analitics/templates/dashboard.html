@@ -172,27 +172,27 @@
                     <tbody class="table-body">
                     <tr>
                     <td class="row_body">USER</td>
-                    <td class="row_body">text1.1</td>
-                    <td class="row_body">text1.2</td>
-                    <td >text1.3</td>
+                    <td class="row_body">{{quartile_ratings.quartile_25("userId")}}</td>
+                    <td class="row_body">{{quartile_ratings.quartile_50("userId")}}</td>
+                    <td >{{quartile_ratings.quartile_75("userId")}}</td>
                     </tr>
                     <tr>
                         <td class="row_body">RATINGS</td>
-                        <td class="row_body">text2.1</td>
-                        <td class="row_body">text2.2</td>
-                        <td >text2.3</td>
+                        <td class="row_body">{{quartile_ratings.quartile_25("rating")}}</td>
+                        <td class="row_body">{{quartile_ratings.quartile_50("rating")}}</td>
+                        <td >{{quartile_ratings.quartile_75("rating")}}</td>
                     </tr>
                     <tr>
                         <td class="row_body">MOVIES</td>
-                        <td class="row_body">text3.1</td>
-                        <td class="row_body">text3.2</td>
-                        <td >text3.3</td>
+                        <td class="row_body">{{quartile_movies.quartile_25("movieId")}}</td>
+                        <td class="row_body">{{quartile_movies.quartile_50("movieId")}}</td>
+                        <td >{{quartile_movies.quartile_75("movieId")}}</td>
                     </tr>
                     <tr>
                         <td class="row_body">TAGS</td>
-                        <td class="row_body">text3.1</td>
-                        <td class="row_body">text3.2</td>
-                        <td >text3.3</td>
+                        <td class="row_body">{{quartile_tags.quartile_25("tag")}}</td>
+                        <td class="row_body">{{quartile_tags.quartile_50("tag")}}</td>
+                        <td >{{quartile_tags.quartile_75("tag")}}</td>
                     </tr>
                     </tbody>
 
