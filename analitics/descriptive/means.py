@@ -7,7 +7,7 @@ def mean_of_fields(
         table_movies: pd.DataFrame,
         table_tags: pd.DataFrame,
         table_ratings: pd.DataFrame,
-) -> Tuple[int, str, int, int]:
+) -> Tuple[float, str, float, float]:
     mm = round(table_movies.movieId.mean(), 2)
     mt = table_tags.tag.mode().values[0]
     mu = round(table_ratings.userId.mean(), 2)
